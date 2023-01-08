@@ -35,3 +35,20 @@ function VerificacaoDeSenha(){
         document.getElementById("idsenha").className = "entradas"
     }
 }
+
+function MostrarSenha(){
+    ElementoBotao = document.getElementsByClassName("mostra-senha")[0]
+    ElementoBotao.addEventListener("click",function(){
+        document.getElementById("idsenha").focus()
+        ElementoBotao.blur()
+    })
+
+    ValorBotao = 0
+    if (ValorBotao == "MOSTRAR"){
+        document.getElementById("idsenha").type = "text"
+        document.getElementsByClassName("mostra-senha")[0].value = "OCULTAR"
+    }else{
+        document.getElementById("idsenha").type = "password"
+        document.getElementsByClassName("mostra-senha")[0].value = "MOSTRAR"
+    }
+}

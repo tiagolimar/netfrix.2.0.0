@@ -14,7 +14,7 @@
         <img src="./img/logo.png" alt="logo da netflix">
     </header>
 
-    <form action="">
+    <form action="post">
         <h1>Entrar</h1>
 
         <div class="campo-email">
@@ -29,20 +29,22 @@
         <div class="campo-senha">
             <input type="password" id="idsenha" name="idsenha" class="entradas" onblur="VerificacaoDeSenha()">
             <label for="idsenha">Senha</label>
+            <button class="mostra-senha" onclick="MostrarSenha">MOSTRAR</button>
         </div>
 
         <div class="senha-invalida">
             A senha deve ter entre 4 e 60 caracteres.
         </div>
 
-        <button type="submit"><strong>Entrar</strong></button>
+        <button type="submit" class="entra"><strong>Entrar</strong></button>
 
         <div class="campos-ajuda">
             <div class="esqueceu">
                 <input class="texto-esqueceu" type="checkbox" checked>
                 <p class="texto-esqueceu">Lembre-se de mim</p>
-            </div>
                 <p class="texto-ajuda">Precisa de ajuda?</p>
+            </div>
+                
         </div>
 
         <div class="rodape">
@@ -53,6 +55,27 @@
     </form>
 
     <footer>
+        <div class="foot">
+            <p>Dúvidas? Ligue <a href="">0800 591 8942</a></p>
+        </div>
+        <div class="foot">
+            <a href="">Perguntas frequentes</a>
+            <a href="">Central de Ajuda</a>
+            <a href="">Termos de Uso</a>
+            <a href="">Privacidade</a>                
+        </div>
+        <div class="foot">
+            <a href="">Preferências de cookies</a>
+            <a href="">Informações corporativas</a>
+        </div>
+        <div class="drop-list">
+            <img src="./img/globo.png" alt="globo" width="20" height="20">
+            <select>
+                <option value=" "> </option>
+                <option value="Português">Português</option>
+                <option value="English">English</option>
+            </select>
+        </div>
 
     </footer>
 </body>

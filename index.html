@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/shortcut_logo.ico">
+    <script src="script.js"></script>
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo da netflix">
+    </header>
+
+    <form action="">
+        <h1>Entrar</h1>
+
+        <div class="campo-email">
+            <input type="email" id="idemail" name="idemail" class="entradas" onblur="VerificacaoDeEmail()">
+            <label for="idemail">Email ou número de telefone</label>
+        </div>
+
+        <div class="campo-senha">
+            <input type="password" id="idpassword" name="idpassword" class="entradas">
+            <label for="idpassword">Senha</label>
+        </div>
+
+        <button type="submit"><strong>Entrar</strong></button>
+
+        <div class="campos-ajuda">
+            <div class="esqueceu">
+                <input class="texto-esqueceu" type="checkbox" checked>
+                <p class="texto-esqueceu">Lembre-se de mim</p>
+            </div>
+                <p class="texto-ajuda">Precisa de ajuda?</p>
+        </div>
+
+        <div class="rodape">
+            <p class="novo-aqui">Novo por aqui? <a href="https://www.netflix.com/"><strong>Assine agora</strong></a>.</p>
+            <p class="captcha">Esta página é protegida pelo Google reCAPTCHA<br>para garantir que você não é um robô. <a href="">Saiba mais.</a></p>
+        </div>
+
+    </form>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

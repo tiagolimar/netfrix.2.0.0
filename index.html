@@ -22,9 +22,17 @@
             <label for="idemail">Email ou número de telefone</label>
         </div>
 
+        <div class="email-invalido">
+            Informe um email válido.
+        </div>
+
         <div class="campo-senha">
-            <input type="password" id="idpassword" name="idpassword" class="entradas">
-            <label for="idpassword">Senha</label>
+            <input type="password" id="idsenha" name="idsenha" class="entradas" onblur="VerificacaoDeSenha()">
+            <label for="idsenha">Senha</label>
+        </div>
+
+        <div class="senha-invalida">
+            A senha deve ter entre 4 e 60 caracteres.
         </div>
 
         <button type="submit"><strong>Entrar</strong></button>

@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("../img/img_bg.jpg");
+    background-image: url("../img/img_bg_.jpg");
     height: 1103px;
     backdrop-filter: brightness(50%);
     display: flex;
@@ -43,9 +43,13 @@ h1{
 }
 
 .campo-email, .campo-senha{
-    margin: 16px 0 16px 0;
+    margin: 28px 0 0 0;
     position: relative;
     height: 50px;
+}
+
+.campo-senha{
+    margin: 16px 0 0 0;
 }
 
 .entradas{
@@ -60,10 +64,27 @@ h1{
     color: white;
 }
 
-.entradas:focus + label, .campo-email label.active{
+.entrada-invalida{
+    width: 296px;
+    height: 50px;
+    padding-top: 16px;
+    padding-left: 16px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333333;
+    color: white;
+    border-bottom: 2px solid #e87c03;
+}
+
+.entradas:focus + label, label.active{
     top: 6px;
-    font-size: small;
+    font-size: 11px;
     transition-duration: 0.2s;
+}
+
+.entradas:focus, .entrada-invalida:focus{
+    outline: 0;
 }
 
 label{
@@ -72,6 +93,28 @@ label{
     left: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: #737373;
+}
+
+.email-invalido{
+    margin: 8px 0 0 0;    
+    height: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color:#e87c03;
+    display: none;
+}
+
+.senha-invalida{
+    margin: 8px 0 0 0;    
+    height: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color:#e87c03;
+    display: none;
+}
+
+.campo-email-invalido, .campo-senha-invalida{
+    border-bottom: 1px solid #e87c03;
 }
 
 p{

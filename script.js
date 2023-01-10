@@ -37,18 +37,12 @@ function VerificacaoDeSenha(){
 }
 
 function MostrarSenha(){
-    ElementoBotao = document.getElementsByClassName("mostra-senha")[0]
-    ElementoBotao.addEventListener("click",function(){
-        document.getElementById("idsenha").focus()
-        ElementoBotao.blur()
-    })
-
-    ValorBotao = 0
+    ValorBotao = document.getElementsByClassName("mostra-senha")[0].innerHTML
     if (ValorBotao == "MOSTRAR"){
         document.getElementById("idsenha").type = "text"
-        document.getElementsByClassName("mostra-senha")[0].value = "OCULTAR"
+        document.getElementsByClassName("mostra-senha")[0].innerHTML = "OCULTAR"
     }else{
         document.getElementById("idsenha").type = "password"
-        document.getElementsByClassName("mostra-senha")[0].value = "MOSTRAR"
+        document.getElementsByClassName("mostra-senha")[0].innerHTML = "MOSTRAR"
     }
 }

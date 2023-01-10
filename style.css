@@ -133,6 +133,10 @@ label{
     display: none;
 }
 
+.mostra-senha:hover{
+    display: inline-block;
+}
+
 .entra{
     margin-top: 40px;
     width: 316px;

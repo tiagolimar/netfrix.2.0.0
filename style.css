@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("../img/img_bg_.jpg");
+    background-image: url("./img/img_bg_.jpg");
     height: 1103px;
     backdrop-filter: brightness(50%);
     display: flex;
